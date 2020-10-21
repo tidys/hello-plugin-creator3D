@@ -1,0 +1,10 @@
+<div id="app" class="panel-default">
+    <div style="width: 100%;display: flex;flex-direction: row;">
+        <div style="margin-right: 5px;">
+            发送数据:
+        </div>
+        <input v-model="sendData" style="flex: 1;"/>
+    </div>
+    <ui-button class="space blue" @click="onClickBtn1">向插件主进程发送</ui-button>
+    <ui-button class="space red" @click="onClickBtn2">向panel2发送</ui-button>
+</div>

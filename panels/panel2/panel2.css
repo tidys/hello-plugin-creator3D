@@ -1,0 +1,8 @@
+.panel2 {
+  display: flex;
+  flex-direction: column;
+}
+.panel2 .text {
+  color: red;
+}
+/*# sourceMappingURL=panel2.css.map */

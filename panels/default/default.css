@@ -1,0 +1,9 @@
+.panel-default {
+  display: flex;
+  flex-direction: column;
+}
+.panel-default .space {
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+/*# sourceMappingURL=default.css.map */

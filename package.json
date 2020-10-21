@@ -1,0 +1,71 @@
+{
+  "name": "hello-plugin",
+  "version": "1.0.0",
+  "author": "xu_yanfeng",
+  "main": "./main.js",
+  "description": "creator3d插件",
+  "contributions": {
+    "menu": [
+      {
+        "path": "Plugin",
+        "label": "打开面板1",
+        "message": "openPanel"
+      },
+      {
+        "path": "Plugin",
+        "label": "打开面板2",
+        "message": "openPanel2"
+      }
+    ],
+    "messages": {
+      "log": {
+        "methods": [
+          "log"
+        ]
+      },
+      "openPanel": {
+        "methods": [
+          "openPanel"
+        ]
+      },
+      "openPanel2": {
+        "methods": [
+          "openPanel2"
+        ]
+      },
+      "panel1-panel2":{
+        "methods": ["panel2.onPanel1Data"]
+      },
+
+      "scene:ready": {
+        "methods": [
+          "onSceneReady"
+        ]
+      }
+    },
+    "shortcuts": [
+      {
+        "message": "openPanel",
+        "win": "shift+1",
+        "mac": "shift+1"
+      },
+      {
+        "message": "openPanel2",
+        "win": "shift+2",
+        "mac": "shift+2"
+      }
+    ]
+  },
+  "panels": {
+    "default": {
+      "title": "panel1",
+      "type": "dockable",
+      "main": "./panels/default/index.js"
+    },
+    "panel2": {
+      "title": "panel2",
+      "type": "dockable",
+      "main": "./panels/panel2/index.js"
+    }
+  }
+}
